@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "521a067e-8060-4cf0-a04c-7dbcb48cdec4",
+		"name": "laravel api C:\\xampp\\htdocs\\blog",
+		"description": "[https://www.itsolutionstuff.com/post/laravel-6-rest-api-with-passport-tutorialexample.html](https://www.itsolutionstuff.com/post/laravel-6-rest-api-with-passport-tutorialexample.html)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "781305"
+	},
+	"item": [
+		{
+			"name": "localhost:9000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Hardik",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:9000/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:9000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTllYTNiOWI3YzI4MDQ5OTI3Mjk0N2E0NmU3MDQzMmY2NTdjYWQ0YzAyZGVmYjJjN2E5Y2I4MjVhMjlhYmQ3YjFlNzA5MGFmYzkwY2QyNzEiLCJpYXQiOjE2Njg5NDc5NjQsIm5iZiI6MTY2ODk0Nzk2NCwiZXhwIjoxNzAwNDgzOTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ip9nMDi0nx6jeiChsnGayox-nsFiyjoyv2jAqS35Qagw9LghhRwF-gN0zIR_QL9Y9rci4NGO1BOdw09v76Rqs1HKB5B57j-XZkLvjh7j2XPfFdAV2CzqcsntN12Jr5Hjqixn_BMuwzIIriNE2zpYVRkP80B_FHM-w-glTGojDgIRdVIn7Bok8o9elcSLtrTSOD596u0pJoYWZoKVOAJNNJ1W8yZfKJJ9S2ZT-wrXpFXn0RyTIqcQTBzFaIwlyb1zydymEQuR4wH662PGherKsyXItD103E8M3OhjE37sEVxeI5aHjo8VWcMC7C3JjFOvL9GWuopw5ztL7yhB95Mwm1GPLOo_Oq50Oz5jllCSFatT6o5lnEldMMBoMQqfeZPvK9N6lKUL1vIHh375kX-NzIFqthT5ypPop3daiQLpNvBQ2Qzy70yVWqYGhMwMHz04BDMt5LpLlKjp7868vs_22ZsUHeWeyrzl_8507JxR89quAQTr5Mgn-2SiNLJc1O4CiQe9YKhD2945xoAUBGdFHIHLwLixWc64N3Ow71rT9JkRaDy0JnjpvDqRe_yYePLJFEX_rGs0GMZgj_HApfhsbFSxtx4WQMfVwTFtpIGxgZR91kU9YMZRcx8WjTMlg2Ge5H7z4FPls2xzoxo_o0sfjvqDnuAzs8QT2lMPTSdqe_Y"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "localhost:9000/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTllYTNiOWI3YzI4MDQ5OTI3Mjk0N2E0NmU3MDQzMmY2NTdjYWQ0YzAyZGVmYjJjN2E5Y2I4MjVhMjlhYmQ3YjFlNzA5MGFmYzkwY2QyNzEiLCJpYXQiOjE2Njg5NDc5NjQsIm5iZiI6MTY2ODk0Nzk2NCwiZXhwIjoxNzAwNDgzOTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ip9nMDi0nx6jeiChsnGayox-nsFiyjoyv2jAqS35Qagw9LghhRwF-gN0zIR_QL9Y9rci4NGO1BOdw09v76Rqs1HKB5B57j-XZkLvjh7j2XPfFdAV2CzqcsntN12Jr5Hjqixn_BMuwzIIriNE2zpYVRkP80B_FHM-w-glTGojDgIRdVIn7Bok8o9elcSLtrTSOD596u0pJoYWZoKVOAJNNJ1W8yZfKJJ9S2ZT-wrXpFXn0RyTIqcQTBzFaIwlyb1zydymEQuR4wH662PGherKsyXItD103E8M3OhjE37sEVxeI5aHjo8VWcMC7C3JjFOvL9GWuopw5ztL7yhB95Mwm1GPLOo_Oq50Oz5jllCSFatT6o5lnEldMMBoMQqfeZPvK9N6lKUL1vIHh375kX-NzIFqthT5ypPop3daiQLpNvBQ2Qzy70yVWqYGhMwMHz04BDMt5LpLlKjp7868vs_22ZsUHeWeyrzl_8507JxR89quAQTr5Mgn-2SiNLJc1O4CiQe9YKhD2945xoAUBGdFHIHLwLixWc64N3Ow71rT9JkRaDy0JnjpvDqRe_yYePLJFEX_rGs0GMZgj_HApfhsbFSxtx4WQMfVwTFtpIGxgZR91kU9YMZRcx8WjTMlg2Ge5H7z4FPls2xzoxo_o0sfjvqDnuAzs8QT2lMPTSdqe_Y"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "pro1",
+							"type": "text"
+						},
+						{
+							"key": "detail",
+							"value": "detail1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:9000/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/products/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTllYTNiOWI3YzI4MDQ5OTI3Mjk0N2E0NmU3MDQzMmY2NTdjYWQ0YzAyZGVmYjJjN2E5Y2I4MjVhMjlhYmQ3YjFlNzA5MGFmYzkwY2QyNzEiLCJpYXQiOjE2Njg5NDc5NjQsIm5iZiI6MTY2ODk0Nzk2NCwiZXhwIjoxNzAwNDgzOTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ip9nMDi0nx6jeiChsnGayox-nsFiyjoyv2jAqS35Qagw9LghhRwF-gN0zIR_QL9Y9rci4NGO1BOdw09v76Rqs1HKB5B57j-XZkLvjh7j2XPfFdAV2CzqcsntN12Jr5Hjqixn_BMuwzIIriNE2zpYVRkP80B_FHM-w-glTGojDgIRdVIn7Bok8o9elcSLtrTSOD596u0pJoYWZoKVOAJNNJ1W8yZfKJJ9S2ZT-wrXpFXn0RyTIqcQTBzFaIwlyb1zydymEQuR4wH662PGherKsyXItD103E8M3OhjE37sEVxeI5aHjo8VWcMC7C3JjFOvL9GWuopw5ztL7yhB95Mwm1GPLOo_Oq50Oz5jllCSFatT6o5lnEldMMBoMQqfeZPvK9N6lKUL1vIHh375kX-NzIFqthT5ypPop3daiQLpNvBQ2Qzy70yVWqYGhMwMHz04BDMt5LpLlKjp7868vs_22ZsUHeWeyrzl_8507JxR89quAQTr5Mgn-2SiNLJc1O4CiQe9YKhD2945xoAUBGdFHIHLwLixWc64N3Ow71rT9JkRaDy0JnjpvDqRe_yYePLJFEX_rGs0GMZgj_HApfhsbFSxtx4WQMfVwTFtpIGxgZR91kU9YMZRcx8WjTMlg2Ge5H7z4FPls2xzoxo_o0sfjvqDnuAzs8QT2lMPTSdqe_Y"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "localhost:9000/api/products/3"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/products/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTllYTNiOWI3YzI4MDQ5OTI3Mjk0N2E0NmU3MDQzMmY2NTdjYWQ0YzAyZGVmYjJjN2E5Y2I4MjVhMjlhYmQ3YjFlNzA5MGFmYzkwY2QyNzEiLCJpYXQiOjE2Njg5NDc5NjQsIm5iZiI6MTY2ODk0Nzk2NCwiZXhwIjoxNzAwNDgzOTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ip9nMDi0nx6jeiChsnGayox-nsFiyjoyv2jAqS35Qagw9LghhRwF-gN0zIR_QL9Y9rci4NGO1BOdw09v76Rqs1HKB5B57j-XZkLvjh7j2XPfFdAV2CzqcsntN12Jr5Hjqixn_BMuwzIIriNE2zpYVRkP80B_FHM-w-glTGojDgIRdVIn7Bok8o9elcSLtrTSOD596u0pJoYWZoKVOAJNNJ1W8yZfKJJ9S2ZT-wrXpFXn0RyTIqcQTBzFaIwlyb1zydymEQuR4wH662PGherKsyXItD103E8M3OhjE37sEVxeI5aHjo8VWcMC7C3JjFOvL9GWuopw5ztL7yhB95Mwm1GPLOo_Oq50Oz5jllCSFatT6o5lnEldMMBoMQqfeZPvK9N6lKUL1vIHh375kX-NzIFqthT5ypPop3daiQLpNvBQ2Qzy70yVWqYGhMwMHz04BDMt5LpLlKjp7868vs_22ZsUHeWeyrzl_8507JxR89quAQTr5Mgn-2SiNLJc1O4CiQe9YKhD2945xoAUBGdFHIHLwLixWc64N3Ow71rT9JkRaDy0JnjpvDqRe_yYePLJFEX_rGs0GMZgj_HApfhsbFSxtx4WQMfVwTFtpIGxgZR91kU9YMZRcx8WjTMlg2Ge5H7z4FPls2xzoxo_o0sfjvqDnuAzs8QT2lMPTSdqe_Y"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:9000/api/products/3"
+			},
+			"response": []
+		}
+	]
+}
